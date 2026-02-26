@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sufiyan Shaikh | DevSecOps Engineer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <style>
+        :root {
+            --bg-dark: #05060a;
+            --accent-cyan: #00d4ff;
+            --accent-lime: #a2ff00;
+            --accent-purple: #bd00ff;
+            --text-main: #f0f0f0;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border-lite: rgba(255, 255, 255, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+        body {
+            background: linear-gradient(rgba(5, 6, 10, 0.5), rgba(5, 6, 10, 1.5)), 
+                        url('https://thumbs.dreamstime.com/b/computer-hacker-hood-touches-touch-screen-binary-code-abstract-software-dark-background-hacking-light-waves-139036811.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+        }
+
+        h1 { font-size: 3rem; letter-spacing: 5px; color: var(--text-main); text-transform: uppercase; margin-bottom: 10px; }
+        .sub-header { color: var(--accent-cyan); font-weight: bold; margin-bottom: 20px; letter-spacing: 2px; }
+        
+        .contact-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-bar a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 8px 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 30px;
+            border: 1px solid var(--border-lite);
+            transition: 0.3s;
+        }
+
+        .contact-bar a:hover { border-color: var(--accent-cyan); background: rgba(0, 212, 255, 0.1); }
+
+        /* Sections */
+        .section-title {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin: 40px 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--accent-lime);
+        }
+
+        .section-title::after { content: ""; height: 1px; flex-grow: 1; background: linear-gradient(90deg, var(--accent-lime), transparent); }
+
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid var(--border-lite);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+        
+        /* Lite Colored Borders for specific sections */
+        .summary-card { border-left: 4px solid var(--accent-cyan); }
+        .skills-card { border-left: 4px solid var(--accent-purple); }
+        .project-card { border-left: 4px solid var(--accent-lime); }
+
+        h3 { color: var(--accent-cyan); margin-bottom: 10px; }
+        
+        .skill-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.05);
+            padding: 5px 12px;
+            border-radius: 4px;
+            margin: 5px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        ul { list-style: none; }
+        ul li { margin-bottom: 10px; position: relative; padding-left: 20px; }
+        ul li::before { content: "▹"; position: absolute; left: 0; color: var(--accent-lime); }
+
+        footer { text-align: center; padding: 40px; font-size: 0.8rem; opacity: 0.6; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Sufiyan Shaikh</h1>
+        <p class="sub-header">FULL-STACK DEVELOPER | CYBERSECURITY | AI</p>
+        <p style="margin-bottom: 20px;">Udgir, Maharashtra | +91 8468959589</p>
+        <div class="contact-bar">
+            <a href="mailto:sufiyan77744@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/shaikh-sufiyan-8b4bba27a" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/sufiyan-shaikh-git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://sufiyan-shaikh-git.github.io/sufiyanshaikh.github.io/" target="_blank"><i class="fas fa-globe"></i> Portfolio</a>
+        </div>
+    </header>
+
+    <section>
+        <h2 class="section-title">Professional Summary</h2>
+        <div class="card summary-card">
+            <p>Versatile Full-Stack Developer and Cybersecurity Enthusiast with a focus on AI-driven solutions. Experienced in the end-to-end SDLC (Software Development Life Cycle), including logic design, software architecture, and testing. Proven track record of building secure web applications and AI threat detection systems like Cybercop AI.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="card skills-card">
+            <div style="margin-bottom: 15px;">
+                <strong style="color: var(--accent-purple);">Development:</strong><br>
+                <span class="skill-tag">Full-Stack Web Dev</span> <span class="skill-tag">Software Design Logic</span> <span class="skill-tag">SDLC</span> <span class="skill-tag">Unit Testing</span> <span class="skill-tag">UI/UX Basics</span>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <strong style="color: var(--accent-purple);">AI & Automation:</strong><br>
+                <span class="skill-tag">AI Prompt Engineering</span> <span class="skill-tag">LLM Implementation</span> <span class="skill-tag">Threat Detection</span> <span class="skill-tag">Automation Scripting</span>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <strong style="color: var(--accent-purple);">Security & Networking:</strong><br>
+                <span class="skill-tag">Network Defense</span> <span class="skill-tag">SOC Concepts</span> <span class="skill-tag">TCP/UDP</span> <span class="skill-tag">VLAN</span> <span class="skill-tag">Cisco Packet Tracer</span> <span class="skill-tag">Kali Linux</span>
+            </div>
+            <div>
+                <strong style="color: var(--accent-purple);">Languages & Tools:</strong><br>
+                <span class="skill-tag">Python (Expert)</span> <span class="skill-tag">Java</span> <span class="skill-tag">C++</span> <span class="skill-tag">C#</span> <span class="skill-tag">HTML/CSS</span> <span class="skill-tag">SQL</span> <span class="skill-tag">GitHub</span> <span class="skill-tag">VS Code</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Core Projects</h2>
+        <div class="card project-card">
+            <h3>1. Web Application Development (End-to-End)</h3>
+            <p>Designed and developed a fully functional web application, managing the entire lifecycle from Logic Design to Deployment. Implemented robust backend logic and conducted rigorous Software Testing to ensure zero-vulnerability. Focused on secure coding practices to prevent common web attacks like SQL Injection and XSS.</p>
+        </div>
+        <div class="card project-card">
+            <h3>2. Cybercop AI Threat Detection System</h3>
+            <p>Collaboratively engineered an AI framework using Python to monitor network traffic for real-time anomalies. Integrated AI Models to automate threat identification, reducing manual security intervention by 40%.</p>
+            <p style="margin-top: 10px; font-size: 0.85rem; color: var(--accent-lime);">Tech Stack: Python, Scikit-learn, AI Logic, Network Protocols.</p>
+        </div>
+        <div class="card project-card">
+            <h3>3. AI Implementation & Tools</h3>
+            <p>Proficient in leveraging Generative AI and LLMs to optimize code, automate documentation, and enhance system logic. Used AI tools for predictive analysis in cybersecurity projects.</p>
+        </div>
+    </section>
+
+    <section>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div>
+                <h2 class="section-title">Education</h2>
+                <div class="card" style="border-left: 4px solid white;">
+                    <p><strong>B.Sc. Computer Science</strong></p>
+                    <p>Swami Vivekanand Mahavidyala, Udgir</p>
+                    <p style="color: var(--accent-cyan);">Expected 2026</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="section-title">Certifications</h2>
+                <div class="card" style="border-left: 4px solid white;">
+                    <ul style="font-size: 0.85rem;">
+                        <li>Cisco: Intro to Cybersecurity</li>
+                        <li>Cisco: Linux Unhatched (NDG)</li>
+                        <li>Software Logic & Programming</li>
+                        <li>Cisco: Getting Started with Packet Tracer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>2026 SUFIYAN SHAIKH</p>
+    </footer>
+</div>
+
+<script>
+    gsap.from("header", { duration: 1.2, opacity: 0, y: -50, ease: "power4.out" });
+    gsap.from(".card", { 
+        duration: 1, 
+        opacity: 0, 
+        y: 30, 
+        stagger: 0.2, 
+        ease: "power2.out",
+        delay: 0.5 
+    });
+</script>
+
+</body>
+</html>
